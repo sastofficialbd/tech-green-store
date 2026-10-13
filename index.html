@@ -60,7 +60,7 @@
         .product-card h3 {
             font-size: 16px;
             color: #333;
-            padding-right: 70px;
+            padding-right: 80px;
         }
         /* স্টিকার স্টাইল */
         .badge {
@@ -75,17 +75,13 @@
             color: white;
         }
         .premium { background-color: #e65100; }
-        .discount { background-color: #d32f2f; }
+        .new-arrival { background-color: #d32f2f; }
+        .discount { background-color: #388e3c; }
         
         /* মূল্যের স্টাইল */
         .price-box {
             margin: 8px 0;
             font-size: 14px;
-        }
-        .old-price {
-            color: #777;
-            text-decoration: line-through;
-            margin-right: 8px;
         }
         .new-price {
             color: #d32f2f;
@@ -109,22 +105,33 @@
             margin-bottom: 5px;
             font-size: 15px;
         }
-        /* যোগাযোগ বাটন */
+        /* অ্যাকশন বাটন গ্রুপ */
+        .btn-group {
+            margin-top: 20px;
+        }
         .contact-btn {
             display: block;
-            background-color: #4caf50;
             color: white;
             text-align: center;
             padding: 12px;
             border-radius: 30px;
             text-decoration: none;
             font-weight: bold;
-            margin-top: 20px;
+            margin-bottom: 12px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             font-size: 16px;
         }
-        .contact-btn:active {
+        .call-btn {
+            background-color: #4caf50;
+        }
+        .call-btn:active {
             background-color: #388e3c;
+        }
+        .whatsapp-btn {
+            background-color: #25D366;
+        }
+        .whatsapp-btn:active {
+            background-color: #128C7E;
         }
     </style>
 </head>
@@ -139,23 +146,23 @@
         <div class="product-section">
             <h2>আমাদের চারা ও মূল্য তালিকা</h2>
             
-            <!-- বারি ১২ বেগুন (কোন অফার নেই) -->
+            <!-- বারি ৬ লাউ -->
+            <div class="product-card">
+                <span class="badge new-arrival">বিশেষ নতুন জাত</span>
+                <h3>১. বারি ৬ লাউ এর চারা</h3>
+                <div class="price-box"><span class="new-price">মূল্য: ৫০ টাকা (প্রতি পিস)</span></div>
+                <p>৬০০০ টাকা কেজি মূল্যের অরিজিনাল ও দুর্লভ বীজ থেকে তৈরি অত্যন্ত প্রিমিয়াম জাতের চারা।</p>
+            </div>
+
+            <!-- বারি ১২ বেগুন -->
             <div class="product-card">
                 <span class="badge premium">প্রিমিয়াম জাত</span>
-                <h3>১. হাইব্রিড বেগুন বারি ১২ এর চারা</h3>
+                <h3>২. হাইব্রিড বেগুন বারি ১২ এর চারা</h3>
                 <div class="price-box"><span class="new-price">মূল্য: ৮০ টাকা (প্রতি পিস)</span></div>
                 <p>১ কেজি ওজনের বড় বেগুন ধরার অত্যন্ত উন্নত ও খাঁটি জাতের চারা।</p>
             </div>
 
-            <!-- বারি ৬ লাউ (কোন অফার নেই) -->
-            <div class="product-card">
-                <span class="badge premium">প্রিমিয়াম জাত</span>
-                <h3>২. বারি ৬ লাউ এর চারা</h3>
-                <div class="price-box"><span class="new-price">মূল্য: ৫০ টাকা (প্রতি পিস)</span></div>
-                <p>উচ্চ উৎপাদনশীল, সুস্থ-সবল ও প্রিমিয়াম কোয়ালিটির লাউয়ের চারা।</p>
-            </div>
-
-            <!-- বারি বেগুন ৮ (কোন অফার নেই) -->
+            <!-- বারি বেগুন ৮ -->
             <div class="product-card">
                 <span class="badge premium">প্রিমিয়াম জাত</span>
                 <h3>৩. বারি বেগুন ৮ এর চারা</h3>
@@ -163,18 +170,18 @@
                 <p>আধা কেজি ওজনের আকর্ষণীয় বেগুন ধরার চমৎকার জাতের চারা।</p>
             </div>
 
-            <!-- বাকি চারায় অফার থাকতে পারে -->
+            <!-- বারি ৪ লাউ -->
             <div class="product-card">
-                <span class="badge discount">সীমিত অফার</span>
+                <span class="badge discount">সাশ্রয়ী মূল্য</span>
                 <h3>৪. বারি ৪ লাউ এর চারা</h3>
-                <div class="price-box"><span class="old-price">পূর্ব মূল্য: ৫০ টাকা</span><span class="new-price">বর্তমান মূল্য: ৪০ টাকা</span></div>
-                <p>অধিক ফলনশীল এবং সহজে চাষযোগ্য বারি লাউয়ের চারা।</p>
+                <div class="price-box"><span class="new-price">মূল্য: ৪০ টাকা (প্রতি পিস)</span></div>
+                <p>২০০০ টাকা কেজি মূল্যের বীজ থেকে তৈরি অধিক ফলনশীল ও সুস্থ লাউয়ের চারা।</p>
             </div>
 
+            <!-- হাইব্রিড টমেটো বারি ২১ -->
             <div class="product-card">
-                <span class="badge discount">সীমিত অফার</span>
                 <h3>৫. হাইব্রিড টমেটো বারি ২১ এর চারা</h3>
-                <div class="price-box"><span class="old-price">পূর্ব মূল্য: ৫০ টাকা</span><span class="new-price">বর্তমান মূল্য: ৪০ টাকা</span></div>
+                <div class="price-box"><span class="new-price">মূল্য: ৪০ টাকা (প্রতি পিস)</span></div>
                 <p>রোগমুক্ত ও দ্রুত বর্ধনশীল ফলন গ্যারান্টি চারা।</p>
             </div>
 
@@ -193,7 +200,7 @@
             <div class="product-card">
                 <h3>৮. বারি ফুলকপি এর চারা</h3>
                 <div class="price-box"><span class="new-price">মূল্য: ৩০ টাকা (প্রতি পিস)</span></div>
-                <p>সাদা ও বড় সাইজের ফুলকপি চাষের উপযোগী সুস্থ চারা।</p>
+                <p>সাদা ও বড় সাইজের ফুলকпи চাষের উপযোগী সুস্থ চারা।</p>
             </div>
 
             <div class="product-card">
@@ -221,7 +228,11 @@
             আমার সর্বশেষ কথা, আমার কাছে চারা কিনেন বা না কিনেন তাতে আমার কোন আপত্তি নেই। যদি আপনাদের কারো কৃষি সম্পর্কে কোন পরামর্শ থাকে বা জানতে চান, আমার জানামতে আমি যতটুকু পারবো অর্থাৎ আমার যতটুকু জানা আছে, আমি এই পরামর্শ সকলের মাঝেই শেয়ার করে দিতে সর্বক্ষণ প্রস্তুত আছি ইন شاء الله।
         </div>
 
-        <a href="tel:+8801914914127" class="contact-btn">📞 সরাসরি কল করুন / পরামর্শ নিন</a>
+        <!-- বাটন গ্রুপ (কল এবং হোয়াটসঅ্যাপ) -->
+        <div class="btn-group">
+            <a href="https://wa.me peacetime%E0%A6%95%E0%A7%81%E0%A6%AE%2C%20%E0%A6%86%E0%A6%AE%E0%A6%BF%20Tees%20Green%20Store%20%E0%A6%A5%E0%A7%87%E0%A6%95%E0%A7%87%20%E0%A6%9A%E0%A6%BE%E0%A6%B0%E0%A6%BE%20%E0%A6%95%E0%A6%BF%E0%A6%A8%E0%A6%A4%E0%A7%87%20%E0%A6%9A%E0%A6%BE%E0%A6%8Blocks%E0%A7%A5" class="contact-btn whatsapp-btn" target="_blank">💬 হোয়াটসঅ্যাপে মেসেজ দিন</a>
+            <a href="tel:+8801914914127" class="contact-btn call-btn">📞 সরাসরি কল করুন / পরামর্শ নিন</a>
+        </div>
     </div>
 
 </body>
