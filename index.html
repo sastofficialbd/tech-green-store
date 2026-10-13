@@ -3,10 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tech-green-store</title>
+    <title>Tees Green Store</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f4f9f4;
+            color: #333;
+        }
+        /* হেডার ও থিম কালার */
+        header {
+            background-color: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+        header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        /* মেইন কন্টেনার */
+        .container {
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        /* পণ্যের ডেমো সেকশন */
+        .product-section {
+            margin-top: 15px;
+        }
+        .product-section h2 {
+            color: #2e7d32;
+            font-size: 18px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #2e7d32;
+            padding-bottom: 5px;
+        }
+        .product-card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-left: 5px solid #4caf50;
+        }
+        .product-card h3 {
+            font-size: 16px;
+            color: #333;
+        }
+        .product-card .price {
+            color: #e65100;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+        /* যোগাযোগ বাটন */
+        .contact-btn {
+            display: block;
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            font-size: 16px;
+        }
+        .contact-btn:active {
+            background-color: #388e3c;
+        }
+    </style>
 </head>
 <body>
-    <h1>tech-green-store এ আপনাকে স্বাগতম</h1>
-    <p>ইলেকট্রনিক্স গ্যাজেট, কৃষি যন্ত্রপাতি এবং সকল প্রকার সবজি, ফুল ও ফলের চারার অনলাইন দোকান।</p>
+
+    <header>
+        <h1>Tees Green Store</h1>
+        <p>ইলেকট্রনিক্স গ্যাজেট, কৃষি যন্ত্রপাতি এবং সকল প্রকার সবজি, ফুল ও ফালের চারার অনলাইন দোকান</p>
+    </header>
+
+    <div class="container">
+        <div class="product-section">
+            <h2>আমাদের পণ্যসমূহ</h2>
+            
+            <div class="product-card">
+                <h3>১. হাইব্রিড টমেটোর চারা</h3>
+                <p class="price">মূল্য: ২০ টাকা (প্রতি পিস)</p>
+                <p>উন্নত জাতের রোগমুক্ত ও দ্রুত বর্ধনশীল চারা।</p>
+            </div>
+
+            <div class="product-card">
+                <h3>২. ডিজিটাল সয়েল ময়েশ্চার মিটার</h3>
+                <p class="price">মূল্য: ৩৫০ টাকা</p>
+                <p>মাটির আর্দ্রতা সহজে পরিমাপ করার গ্যাজেট।</p>
+            </div>
+        </div>
+
+        <!-- আপনার ফোন নম্বরটি এখানে সফলভাবে সেট করা হয়েছে -->
+        <a href="tel:+8801914914127" class="contact-btn">📞 সরাসরি কল করুন</a>
+    </div>
+
 </body>
 </html>
