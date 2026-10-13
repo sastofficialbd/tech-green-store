@@ -56,22 +56,35 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
             border-left: 5px solid #4caf50;
             position: relative;
+            display: flex;
+            gap: 15px;
+            align-items: center;
         }
-        .product-card h3 {
+        /* চারার ছবি স্টাইল */
+        .product-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 6px;
+            object-fit: cover;
+            border: 1px solid #ddd;
+        }
+        .product-info {
+            flex: 1;
+        }
+        .product-info h3 {
             font-size: 16px;
             color: #333;
-            padding-right: 80px;
+            margin-bottom: 5px;
         }
         /* স্টিকার স্টাইল */
         .badge {
             position: absolute;
-            top: 15px;
-            right: 15px;
-            font-size: 10px;
+            top: 10px;
+            right: 10px;
+            font-size: 9px;
             font-weight: bold;
-            padding: 4px 8px;
+            padding: 3px 6px;
             border-radius: 4px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             color: white;
         }
         .premium { background-color: #e65100; }
@@ -80,13 +93,13 @@
         
         /* মূল্যের স্টাইল */
         .price-box {
-            margin: 8px 0;
+            margin: 4px 0;
             font-size: 14px;
         }
         .new-price {
             color: #d32f2f;
             font-weight: bold;
-            font-size: 16px;
+            font-size: 15px;
         }
         /* বিশেষ দ্রষ্টব্য বক্স */
         .note-box {
@@ -141,14 +154,8 @@
         .call-btn {
             background-color: #4caf50;
         }
-        .call-btn:active {
-            background-color: #388e3c;
-        }
         .whatsapp-btn {
             background-color: #25D366;
-        }
-        .whatsapp-btn:active {
-            background-color: #128C7E;
         }
     </style>
 </head>
@@ -165,98 +172,99 @@
             
             <!-- বারি ৬ লাউ -->
             <div class="product-card">
-                <span class="badge new-arrival">বিশেষ নতুন জাত</span>
-                <h3>১. বারি ৬ লাউ এর চারা</h3>
-                <div class="price-box"><span class="new-price">মূল্য: ৫০ টাকা (প্রতি পিস)</span></div>
-                <p>অরিজিনাল ও দুর্লভ উন্নত বীজ থেকে তৈরি অত্যন্ত প্রিমিয়াম জাতের নতুন চারা।</p>
+                <img src="https://unsplash.com" alt="লাউ" class="product-img">
+                <div class="product-info">
+                    <span class="badge new-arrival">বিশেষ নতুন জাত</span>
+                    <h3>১. বারি ৬ লাউ এর চারা</h3>
+                    <div class="price-box"><span class="new-price">মূল্য: ৫০ টাকা (প্রতি পিস)</span></div>
+                    <p>দুর্লভ উন্নত বীজ থেকে তৈরি প্রিমিয়াম জাতের নতুন চারা।</p>
+                </div>
             </div>
 
             <!-- বারি ১২ বেগুন -->
             <div class="product-card">
-                <span class="badge premium">প্রিমিয়াম জাত</span>
-                <h3>২. হাইব্রিড বেগুন বারি ১২ এর চারা</h3>
-                <div class="price-box"><span class="new-price">মূল্য: ৮০ টাকা (প্রতি পিস)</span></div>
-                <p>১ কেজি ওজনের বড় বেগুন ধরার অত্যন্ত উন্নত ও খাঁটি জাতের চারা।</p>
+                <img src="https://unsplash.com" alt="বেগুন" class="product-img">
+                <div class="product-info">
+                    <span class="badge premium">প্রিমিয়াম জাত</span>
+                    <h3>২. হাইব্রিড বেগুন বারি ১২ এর চারা</h3>
+                    <div class="price-box"><span class="new-price">মূল্য: ৮০ টাকা (প্রতি পিস)</span></div>
+                    <p>১ কেজি ওজনের বড় বেগুন ধরার উন্নত ও খাঁটি জাতের চারা।</p>
+                </div>
             </div>
 
             <!-- বারি বেগুন ৮ -->
             <div class="product-card">
-                <span class="badge premium">প্রিমিয়াম জাত</span>
-                <h3>৩. বারি বেগুন ৮ এর চারা</h3>
-                <div class="price-box"><span class="new-price">মূল্য: ৫০ টাকা (প্রতি পিস)</span></div>
-                <p>আধা কেজি ওজনের আকর্ষণীয় বেগুন ধরার চমৎকার জাতের চারা।</p>
+                <img src="https://unsplash.com" alt="বেগুন" class="product-img">
+                <div class="product-info">
+                    <span class="badge premium">প্রিমিয়াম জাত</span>
+                    <h3>৩. বারি বেগুন ৮ এর চারা</h3>
+                    <div class="price-box"><span class="new-price">মূল্য: ৫০ টাকা (প্রতি পিস)</span></div>
+                    <p>আধা কেজি ওজনের আকর্ষণীয় বেগুন ধরার চমৎকার জাতের চারা।</p>
+                </div>
             </div>
 
             <!-- বারি ৪ লাউ -->
             <div class="product-card">
-                <span class="badge discount">সাশ্রয়ী মূল্য</span>
-                <h3>৪. বারি ৪ লাউ এর চারা</h3>
-                <div class="price-box"><span class="new-price">মূল্য: ৪০ টাকা (প্রতি পিস)</span></div>
-                <p>উন্নত বীজ থেকে তৈরি অধিক ফলনশীল ও সুস্থ-সবল লাউয়ের চারা।</p>
+                <img src="https://unsplash.com" alt="লাউ" class="product-img">
+                <div class="product-info">
+                    <span class="badge discount">সাশ্রয়ী মূল্য</span>
+                    <h3>৪. বারি ৪ লাউ এর চারা</h3>
+                    <div class="price-box"><span class="new-price">মূল্য: catering ৪০ টাকা (প্রতি পিস)</span></div>
+                    <p>অধিক ফলনশীল ও সুস্থ-সবল লাউয়ের চারা।</p>
+                </div>
             </div>
 
             <!-- হাইব্রিড টমেটো বারি ২১ -->
             <div class="product-card">
-                <h3>৫. হাইব্রিড টমেটো বারি ২১ এর চারা</h3>
-                <div class="price-box"><span class="new-price">মূল্য: ৪০ টাকা (প্রতি পিস)</span></div>
-                <p>রোগমুক্ত ও দ্রুত বর্ধনশীল ফলন গ্যারান্টি চারা।</p>
+                <img src="https://unsplash.com" alt="টমেটো" class="product-img">
+                <div class="product-info">
+                    <h3>৫. হাইব্রিড টমেটো বারি ২১ এর চারা</h3>
+                    <div class="price-box"><span class="new-price">মূল্য: ৪০ টাকা (প্রতি পিস)</span></div>
+                    <p>রোগমুক্ত ও দ্রুত বর্ধনশীল ফলন গ্যারান্টি চারা।</p>
+                </div>
             </div>
 
+            <!-- বারি শিম -->
             <div class="product-card">
-                <h3>৬. বারি শিম এর চারা</h3>
-                <div class="price-box"><span class="new-price">মূল্য: ৩০ টাকা (প্রতি পিস)</span></div>
-                <p>প্রচুর ফলনশীল এবং উন্নত মানের শিমের চারা।</p>
+                <img src="https://unsplash.com" alt="সবজি চারা" class="product-img">
+                <div class="product-info">
+                    <h3>৬. বারি শিম এর চারা</h3>
+                    <div class="price-box"><span class="new-price">মূল্য: ৩০ টাকা (প্রতি পিস)</span></div>
+                    <p>প্রচুর ফলনশীল এবং উন্নত মানের শিমের চারা।</p>
+                </div>
             </div>
 
+            <!-- বারি ব্রোকলি -->
             <div class="product-card">
-                <h3>৭. বারি ব্রোকলি এর চারা</h3>
-                <div class="price-box"><span class="new-price">মূল্য: ৪০ টাকা (প্রতি পিস)</span></div>
-                <p>পুষ্টিকর ও সুস্বাদু সবুজ ব্রোকলির উন্নত জাতের চারা।</p>
+                <img src="https://unsplash.com" alt="ব্রোকলি" class="product-img">
+                <div class="product-info">
+                    <h3>৭. বারি ব্রোকলি এর চারা</h3>
+                    <div class="price-box"><span class="new-price">মূল্য: ৪০ টাকা (প্রতি পিস)</span></div>
+                    <p>পুষ্টিকর ও সুস্বাদু সবুজ ব্রোকলির উন্নত জাতের চারা।</p>
+                </div>
             </div>
 
+            <!-- বারি ফুলকপি -->
             <div class="product-card">
-                <h3>৮. বারি ফুলকপি এর চারা</h3>
-                <div class="price-box"><span class="new-price">মূল্য: ৩০ টাকা (প্রতি পিস)</span></div>
-                <p>সাদা ও বড় সাইজের ফুলকপি চাষের উপযোগী সুস্থ চারা।</p>
+                <img src="https://unsplash.com" alt="ফুলকপি" class="product-img">
+                <div class="product-info">
+                    <h3>৮. বারি ফুলকপি এর চারা</h3>
+                    <div class="price-box"><span class="new-price">মূল্য: ৩০ টাকা (প্রতি পিস)</span></div>
+                    <p>সাদা ও বড় সাইজের ফুলকপি চাষের উপযোগী সুস্থ চারা।</p>
+                </div>
             </div>
 
+            <!-- বারি মিষ্টি কুমড়া -->
             <div class="product-card">
-                <h3>৯. বারি ঝাড়শিম এর চারা</h3>
-                <div class="price-box"><span class="new-price">মূল্য: ৩০ টাকা (প্রতি পিস)</span></div>
-                <p>টবে বা মাঠে সহজে চাষযোগ্য সুস্বাদু ঝাড়শিম।</p>
-            </div>
-
-            <div class="product-card">
-                <h3>১০. বারি মিষ্টি কুমড়া এর চারা</h3>
-                <div class="price-box"><span class="new-price">মূল্য: ৪০ টাকা (প্রতি পিস)</span></div>
-                <p>মিষ্টি ও সুস্বাদু কুমড়া ধরার খাঁটি জাতের চারা।</p>
-            </div>
-
-            <div class="product-card">
-                <h3>১১. বারি স্কোয়াশ এর চারা</h3>
-                <div class="price-box"><span class="new-price">মূল্য: ৫০ টাকা (প্রতি পিস)</span></div>
-                <p>আধুনিক ও লাভজনক সবজি স্কোয়াশ চাষের উপযোগী চারা।</p>
+                <img src="https://unsplash.com" alt="কুমড়া" class="product-img">
+                <div class="product-info">
+                    <h3>১০. বারি মিষ্টি কুমড়া এর চারা</h3>
+                    <div class="price-box"><span class="new-price">মূল্য: ৪০ টাকা (প্রতি পিস)</span></div>
+                    <p>মিষ্টি ও সুস্বাদু কুমড়া ধরার খাঁটি জাতের চারা।</p>
+                </div>
             </div>
         </div>
 
-        <!-- আপনার পরামর্শ দেওয়ার সুন্দর বার্তাটি -->
+        <!-- বিশেষ দ্রষ্টব্য বক্স -->
         <div class="note-box">
             <strong>বিঃদ্রঃ</strong>
-            আমার সর্বশেষ কথা, আমার কাছে চারা কিনেন বা না কিনেন তাতে আমার কোন আপত্তি নেই। যদি আপনাদের কারো কৃষি সম্পর্কে কোন পরামর্শ থাকে বা জানতে চান, আমার জানামতে আমি যতটুকু পারবো অর্থাৎ আমার যতটুকু জানা আছে, আমি এই পরামর্শ সকলের মাঝেই শেয়ার করে দিতে সর্বক্ষণ প্রস্তুত আছি ইন شاء الله।
-        </div>
-
-        <!-- আপনার নার্সারির সঠিক ঠিকানা -->
-        <div class="location-box">
-            <strong>📍 আমাদের ঠিকানা:</strong>
-            বলারকান্দা (৬নং ওয়ার্ড), ১০নং সিধলা ইউনিয়ন, গৌরীপুর উপজেলা, ময়মনসিংহ।
-        </div>
-
-        <!-- বাটন গ্রুপ (কল এবং হোয়াটসঅ্যাপ) -->
-        <div class="btn-group">
-            <a href="https://wa.me___" class="contact-btn whatsapp-btn" target="_blank">💬 হোয়াটসঅ্যাপে মেসেজ দিন</a>
-            <a href="tel:+8801914914127" class="contact-btn call-btn">📞 সরাসরি কল করুন / পরামর্শ নিন</a>
-        </div>
-    </div>
-
-</body>
-</html>
