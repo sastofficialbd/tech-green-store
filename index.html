@@ -37,7 +37,7 @@
             max-width: 600px;
             margin: 0 auto;
         }
-        /* পণ্যের ডেমো সেকশন */
+        /* পণ্যের সেকশন */
         .product-section {
             margin-top: 15px;
         }
@@ -55,15 +55,57 @@
             margin-bottom: 15px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
             border-left: 5px solid #4caf50;
+            position: relative;
         }
         .product-card h3 {
             font-size: 16px;
             color: #333;
+            padding-right: 70px;
         }
-        .product-card .price {
+        /* অফার স্টিকার */
+        .discount-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: #d32f2f;
+            color: white;
+            font-size: 11px;
+            font-weight: bold;
+            padding: 4px 8px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        /* মূল্যের স্টাইল */
+        .price-box {
+            margin: 8px 0;
+            font-size: 14px;
+        }
+        .old-price {
+            color: #777;
+            text-decoration: line-through;
+            margin-right: 8px;
+        }
+        .new-price {
             color: #e65100;
             font-weight: bold;
-            margin: 5px 0;
+            font-size: 16px;
+        }
+        /* বিশেষ দ্রষ্টব্য বক্স */
+        .note-box {
+            background-color: #e8f5e9;
+            border: 1px dashed #2e7d32;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 25px;
+            color: #1b5e20;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .note-box strong {
+            color: #d32f2f;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 15px;
         }
         /* যোগাযোগ বাটন */
         .contact-btn {
@@ -75,7 +117,7 @@
             border-radius: 30px;
             text-decoration: none;
             font-weight: bold;
-            margin-top: 25px;
+            margin-top: 20px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             font-size: 16px;
         }
@@ -88,7 +130,7 @@
 
     <header>
         <h1>Tees Green Store</h1>
-        <p>ইলেকট্রনিক্স গ্যাজেট, কৃষি যন্ত্রপাতি এবং সকল প্রকার সবজি, ফুল ও ফালের চারার অনলাইন দোকান</p>
+        <p>ইলেকট্রনিক্স গ্যাজেট, কৃষি যন্ত্রপাতি এবং সকল প্রকার সবজি, ফুল ও ফলের চারার অনলাইন দোকান</p>
     </header>
 
     <div class="container">
@@ -96,20 +138,90 @@
             <h2>আমাদের পণ্যসমূহ</h2>
             
             <div class="product-card">
-                <h3>১. হাইব্রিড টমেটোর চারা</h3>
-                <p class="price">মূল্য: ২০ টাকা (প্রতি পিস)</p>
+                <span class="discount-badge">৫০% ছাড়</span>
+                <h3>১. হাইব্রিড টমেটো বারি ২১ এর চারা</h3>
+                <div class="price-box"><span class="old-price">পূর্ব মূল্য: ৪০টাকা</span><span class="new-price">বর্তমান মূল্য: ২০ টাকা</span></div>
                 <p>উন্নত জাতের রোগমুক্ত ও দ্রুত বর্ধনশীল চারা।</p>
             </div>
 
             <div class="product-card">
-                <h3>২. ডিজিটাল সয়েল ময়েশ্চার মিটার</h3>
-                <p class="price">মূল্য: ৩৫০ টাকা</p>
-                <p>মাটির আর্দ্রতা সহজে পরিমাপ করার গ্যাজেট।</p>
+                <span class="discount-badge">৫০% ছাড়</span>
+                <h3>২. হাইব্রিড বেগুন বারি ১২ এর চারা</h3>
+                <div class="price-box"><span class="old-price">পূর্ব মূল্য: ৪০টাকা</span><span class="new-price">বর্তমান মূল্য: ২০ টাকা</span></div>
+                <p>১ কেজি ওজনের বড় বেগুন ধরার উন্নত জাতের চারা।</p>
+            </div>
+
+            <div class="product-card">
+                <span class="discount-badge">৫০% ছাড়</span>
+                <h3>৩. বারি বেগুন ৮ এর চারা</h3>
+                <div class="price-box"><span class="old-price">পূর্ব মূল্য: ৪০টাকা</span><span class="new-price">বর্তমান মূল্য: ২০ টাকা</span></div>
+                <p>আধা কেজি ওজনের বেগুন ধরার চমৎকার জাতের চারা।</p>
+            </div>
+
+            <div class="product-card">
+                <span class="discount-badge">৫০% ছাড়</span>
+                <h3>৪. বারি শিম এর চারা</h3>
+                <div class="price-box"><span class="old-price">পূর্ব মূল্য: ৩০টাকা</span><span class="new-price">বর্তমান মূল্য: ১৫ টাকা</span></div>
+                <p>প্রচুর ফলনশীল উন্নত মানের শিমের চারা।</p>
+            </div>
+
+            <div class="product-card">
+                <span class="discount-badge">৫০% ছাড়</span>
+                <h3>৫. বারি ব্রোকলি এর চারা</h3>
+                <div class="price-box"><span class="old-price">পূর্ব মূল্য: ৪০টাকা</span><span class="new-price">বর্তমান মূল্য: ২০ টাকা</span></div>
+                <p>পুষ্টিকর ও সুস্বাদু সবুজ ব্রোকলির উন্নত চারা।</p>
+            </div>
+
+            <div class="product-card">
+                <span class="discount-badge">৫০% ছাড়</span>
+                <h3>৬. বারি ফুলকপি এর চারা</h3>
+                <div class="price-box"><span class="old-price">পূর্ব মূল্য: ৩০টাকা</span><span class="new-price">বর্তমান মূল্য: ১৫ টাকা</span></div>
+                <p>সাদা ও বড় সাইজের ফুলকপি চাষের উপযোগী চারা।</p>
+            </div>
+
+            <div class="product-card">
+                <span class="discount-badge">৫০% ছাড়</span>
+                <h3>৭. বারি ঝাড়শিম এর চারা</h3>
+                <div class="price-box"><span class="old-price">পূর্ব মূল্য: ৩০টাকা</span><span class="new-price">বর্তমান মূল্য: ১৫ টাকা</span></div>
+                <p>সহজে চাষযোগ্য ঝাড়শিমের চারা।</p>
+            </div>
+
+            <div class="product-card">
+                <span class="discount-badge">৫০% ছাড়</span>
+                <h3>৮. বারি ৬ লাউ এর চারা</h3>
+                <div class="price-box"><span class="old-price">পূর্ব মূল্য: ৫০টাকা</span><span class="new-price">বর্তমান মূল্য: ২৫ টাকা</span></div>
+                <p>উন্নত জাতের অধিক ফলনশীল লাউয়ের চারা।</p>
+            </div>
+
+            <div class="product-card">
+                <span class="discount-badge">৫০% ছাড়</span>
+                <h3>৯. বারি ৪ লাউ এর চারা</h3>
+                <div class="price-box"><span class="old-price">পূর্ব মূল্য: ৫০টাকা</span><span class="new-price">বর্তমান মূল্য: ২৫ টাকা</span></div>
+                <p>সহজ পরিচর্যায় দ্রুত বড় হওয়া লাউয়ের চারা।</p>
+            </div>
+
+            <div class="product-card">
+                <span class="discount-badge">৫০% ছাড়</span>
+                <h3>১০. বারি মিষ্টি কুমড়া এর চারা</h3>
+                <div class="price-box"><span class="old-price">পূর্ব মূল্য: ৪০টাকা</span><span class="new-price">বর্তমান মূল্য: ২০ টাকা</span></div>
+                <p>মিষ্টি ও সুস্বাদু কুমড়া ধরার জাত।</p>
+            </div>
+
+            <div class="product-card">
+                <span class="discount-badge">৫০% ছাড়</span>
+                <h3>১১. বারি স্কোয়াশ এর চারা</h3>
+                <div class="price-box"><span class="old-price">পূর্ব মূল্য: ৬০টাকা</span><span class="new-price">বর্তমান মূল্য: ৩০ টাকা</span></div>
+                <p>আধুনিক ও লাভজনক সবজি স্কোয়াশ চাষের চারা।</p>
             </div>
         </div>
 
-        <!-- আপনার ফোন নম্বরটি এখানে সফলভাবে সেট করা হয়েছে -->
-        <a href="tel:+8801914914127" class="contact-btn">📞 সরাসরি কল করুন</a>
+        <!-- আপনার পরামর্শ দেওয়ার সুন্দর বার্তাটি -->
+        <div class="note-box">
+            <strong>বিঃদ্রঃ</strong>
+            আমার সর্বশেষ কথা, আমার কাছে চারা কিনেন বা না কিনেন তাতে আমার কোন আপত্তি নেই। যদি আপনাদের কারো কৃষি সম্পর্কে কোন পরামর্শ থাকে বা জানতে চান, আমার জানামতে আমি যতটুকু পারবো অর্থাৎ আমার যতটুকু জানা আছে, আমি এই পরামর্শ সকলের মাঝেই শেয়ার করে দিতে সর্বক্ষণ প্রস্তুত আছি ইনশাআল্লাহ।
+        </div>
+
+        <a href="tel:+8801914914127" class="contact-btn">📞 সরাসরি কল করুন / পরামর্শ নিন</a>
     </div>
 
 </body>
