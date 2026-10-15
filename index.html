@@ -15,7 +15,6 @@
             background-color: #f4f9f4;
             color: #333;
         }
-        /* হেডার ও থিম কালার */
         header {
             background-color: #2e7d32;
             color: white;
@@ -31,13 +30,11 @@
             font-size: 14px;
             opacity: 0.9;
         }
-        /* মেইন কন্টেনার */
         .container {
             padding: 20px;
             max-width: 600px;
             margin: 0 auto;
         }
-        /* পণ্যের সেকশন */
         .product-section {
             margin-top: 15px;
         }
@@ -60,12 +57,12 @@
             gap: 15px;
             align-items: center;
         }
-        /* চারার ছবি স্টাইল */
-        .product-img {
+        .product-card img {
             width: 80px;
             height: 80px;
-            border-radius: 6px;
+            min-width: 80px;
             object-fit: cover;
+            border-radius: 6px;
             border: 1px solid #ddd;
         }
         .product-info {
@@ -75,9 +72,8 @@
             font-size: 15px;
             color: #333;
             margin-bottom: 5px;
-            padding-right: 75px; /* স্টিকারের জায়গার জন্য ডানপাশে ফাঁকা রাখা হলো */
+            padding-right: 75px;
         }
-        /* স্টিকার স্টাইল */
         .badge {
             position: absolute;
             top: 10px;
@@ -89,8 +85,6 @@
             color: white;
         }
         .hybrid { background-color: #0288d1; }
-        
-        /* মূল্যের স্টাইল */
         .price-box {
             margin: 4px 0;
             font-size: 14px;
@@ -100,7 +94,6 @@
             font-weight: bold;
             font-size: 15px;
         }
-        /* বিশেষ দ্রষ্টব্য বক্স */
         .note-box {
             background-color: #e8f5e9;
             border: 1px dashed #2e7d32;
@@ -117,7 +110,6 @@
             margin-bottom: 5px;
             font-size: 15px;
         }
-        /* ঠিকানা বক্স */
         .location-box {
             background-color: #fff3e0;
             border: 1px solid #ffb74d;
@@ -134,7 +126,6 @@
             font-size: 15px;
             color: #e65100;
         }
-        /* অ্যাকশন বাটন গ্রুপ */
         .btn-group {
             margin-top: 20px;
         }
@@ -150,13 +141,8 @@
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             font-size: 16px;
         }
-        .call-btn {
-            background-color: #4caf50;
-        }
-        .whatsapp-btn {
-            background-color: #25D366;
-        }
-        /* ফুটার স্টাইল */
+        .call-btn { background-color: #4caf50; }
+        .whatsapp-btn { background-color: #25D366; }
         footer {
             text-align: center;
             margin-top: 30px;
@@ -180,128 +166,125 @@
             
             <!-- ১. বারি টমেটো ৮ -->
             <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=200&q=80" alt="বারি টমেটো ৮" class="product-img">
+                <img src="1000027383.jpg" alt="বারি টমেটো ৮">
                 <div class="product-info">
                     <span class="badge hybrid">১০০% হাইব্রিড</span>
                     <h3>১. বারি টমেটো ৮ এর চারা</h3>
                     <div class="price-box"><span class="new-price">মূল্য: ৪০ টাকা (প্রতি পিস)</span></div>
-                    <p>উন্নত জাতের রোগ প্রতিরোধক্ষম ও অধিক ফলনশীল হাইব্রিড টমেটো চারা[span_0](start_span)[span_0](end_span)।</p>
+                    <p>উন্নত জাতের রোগ প্রতিরোধক্ষম ও অধিক ফলনশীল হাইব্রিড টমেটো চারা।</p>
                 </div>
             </div>
 
             <!-- ২. বারি টমেটো ২১ -->
             <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?auto=format&fit=crop&w=200&q=80" alt="বারি টমেটো ২১" class="product-img">
+                <img src="1000027382.jpg" alt="বারি টমেটো ২১">
                 <div class="product-info">
                     <span class="badge hybrid">১০০% হাইব্রিড</span>
                     <h3>২. হাইব্রিড টমেটো বারি ২১ এর চারা</h3>
                     <div class="price-box"><span class="new-price">মূল্য: ৪০ টাকা (প্রতি পিস)</span></div>
-                    <p>রোগমুক্ত ও দ্রুত বর্ধনশীল ফলন গ্যারান্টিযুক্ত হাইব্রিড চারা[span_1](start_span)[span_1](end_span)।</p>
+                    <p>রোগমুক্ত ও দ্রুত বর্ধনশীল ফলন গ্যারান্টিযুক্ত হাইব্রিড চারা।</p>
                 </div>
             </div>
 
             <!-- ৩. বারি ব্রোকলি -->
             <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=200&q=80" alt="বারি ব্রোকলি" class="product-img">
+                <img src="1000027381.png" alt="বারি ব্রোকলি">
                 <div class="product-info">
                     <span class="badge hybrid">১০০% হাইব্রিড</span>
                     <h3>৩. বারি ব্রোকলি এর চারা</h3>
                     <div class="price-box"><span class="new-price">মূল্য: ৪০ টাকা (প্রতি পিস)</span></div>
-                    <p>পুষ্টিকর ও সুস্বাদু সবুজ ব্রোকলির উন্নত হাইব্রিড জাতের চারা[span_2](start_span)[span_2](end_span)।</p>
+                    <p>পুষ্টিকর ও সুস্বাদু সবুজ ব্রোকলির উন্নত হাইব্রিড জাতের চারা।</p>
                 </div>
             </div>
 
             <!-- ৪. বারি ফুলকপি -->
             <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1568584713370-e99a1eab30b9?auto=format&fit=crop&w=200&q=80" alt="বারি ফুলকপি" class="product-img">
+                <img src="1000027380.jpg" alt="বারি ফুলকপি">
                 <div class="product-info">
                     <span class="badge hybrid">১০০% হাইব্রিড</span>
                     <h3>৪. বারি ফুলকপি এর চারা</h3>
                     <div class="price-box"><span class="new-price">মূল্য: ৩০ টাকা (প্রতি পিস)</span></div>
-                    <p>সাদা ও বড় সাইজের ফুলকপি চাষের উপযোগী সুস্থ হাইব্রিড চারা[span_3](start_span)[span_3](end_span)।</p>
+                    <p>সাদা ও বড় সাইজের ফুলকপি চাষের উপযোগী সুস্থ হাইব্রিড চারা।</p>
                 </div>
             </div>
 
             <!-- ৫. বারি শিম ৪ -->
             <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1557844352-761f2565b92c?auto=format&fit=crop&w=200&q=80" alt="বারি শিম ৪" class="product-img">
+                <img src="1000027379.jpg" alt="বারি শিম ৪">
                 <div class="product-info">
                     <span class="badge hybrid">১০০% হাইব্রিড</span>
                     <h3>৫. বারি শিম ৪ এর চারা</h3>
                     <div class="price-box"><span class="new-price">মূল্য: ৩০ টাকা (প্রতি পিস)</span></div>
-                    <p>প্রচুর ফলনশীল এবং উন্নত মানের হাইব্রিড শিম চারা[span_4](start_span)[span_4](end_span)।</p>
+                    <p>প্রচুর ফলনশীল এবং উন্নত মানের হাইব্রিড শিম চারা।</p>
                 </div>
             </div>
 
             <!-- ৬. বারি লাউ ৪ -->
             <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1517456793571-1d4efc42f0c0?auto=format&fit=crop&w=200&q=80" alt="বারি লাউ ৪" class="product-img">
+                <img src="1000027378.jpg" alt="বারি লাউ ৪">
                 <div class="product-info">
                     <span class="badge hybrid">১০০% হাইব্রিড</span>
                     <h3>৬. বারি লাউ ৪ এর চারা</h3>
                     <div class="price-box"><span class="new-price">মূল্য: ৪০ টাকা (প্রতি পিস)</span></div>
-                    <p>অর্ধেক ফলনশীল ও সুস্থ-সবল হাইব্রিড লাউয়ের চারা[span_5](start_span)[span_5](end_span)।</p>
+                    <p>অর্ধেক ফলনশীল ও সুস্থ-সবল হাইব্রিড লাউয়ের চারা।</p>
                 </div>
             </div>
 
             <!-- ৭. বারি লাউ ৬ -->
             <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1599839575945-a9e5af0b3fa5?auto=format&fit=crop&w=200&q=80" alt="বারি লাউ ৬" class="product-img">
+                <img src="1000027377.jpg" alt="বারি লাউ ৬">
                 <div class="product-info">
                     <span class="badge hybrid">১০০% হাইব্রিড</span>
                     <h3>৭. বারি ৬ লাউ এর চারা</h3>
                     <div class="price-box"><span class="new-price">মূল্য: ৫০ টাকা (প্রতি পিস)</span></div>
-                    <p>দুর্লভ উন্নত বীজ থেকে তৈরি প্রিমিয়াম জাতের নতুন হাইব্রিড চারা[span_6](start_span)[span_6](end_span)।</p>
+                    <p>দুর্লভ উন্নত বীজ থেকে তৈরি প্রিমিয়াম জাতের নতুন হাইব্রিড চারা।</p>
                 </div>
             </div>
 
             <!-- ৮. বারি বেগুন ১২ -->
             <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1628773822810-5d3c5f76f41b?auto=format&fit=crop&w=200&q=80" alt="বারি বেগুন ১২" class="product-img">
+                <img src="1000027374.jpg" alt="বারি বেগুন ১২">
                 <div class="product-info">
                     <span class="badge hybrid">১০০% হাইব্রিড</span>
                     <h3>৮. হাইব্রিড বেগুন বারি ১২ এর চারা</h3>
                     <div class="price-box"><span class="new-price">মূল্য: ৮০ টাকা (প্রতি পিস)</span></div>
-                    <p>১ কেজি ওজনের বড় বেগুন ধরার উন্নত ও খাঁটি হাইব্রিড জাতের চারা[span_7](start_span)[span_7](end_span)।</p>
+                    <p>১ কেজি ওজনের বড় বেগুন ধরার উন্নত ও খাঁটি হাইব্রিড জাতের চারা।</p>
                 </div>
             </div>
 
             <!-- ৯. বারি বেগুন ৮ -->
             <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1667420556272-3539fcb069d0?auto=format&fit=crop&w=200&q=80" alt="বারি বেগুন ৮" class="product-img">
+                <img src="1000027375.jpg" alt="বারি বেগুন ৮">
                 <div class="product-info">
                     <span class="badge hybrid">১০০% হাইব্রিড</span>
                     <h3>৯. বারি বেগুন ৮ এর চারা</h3>
                     <div class="price-box"><span class="new-price">মূল্য: ৫০ টাকা (প্রতি পিস)</span></div>
-                    <p>আধা কেজি ওজনের আকর্ষণীয় বেগুন ধরার চমৎকার হাইব্রিড জাতের চারা[span_8](start_span)[span_8](end_span)।</p>
+                    <p>আধা কেজি ওজনের আকর্ষণীয় বেগুন ধরার চমৎকার হাইব্রিড জাতের চারা।</p>
                 </div>
             </div>
 
             <!-- ১০. বারি ঝাড় শিম ৪ (পাতা করোল্লা) -->
             <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=200&q=80" alt="পাতা করোল্লা" class="product-img">
+                <img src="1000027373_2.jpg" alt="পাতা করোল্লা">
                 <div class="product-info">
                     <span class="badge hybrid">১০০% হাইব্রিড</span>
                     <h3>১০. বারি ঝাড় শিম ৪ (পাতা করোল্লা) এর চারা</h3>
                     <div class="price-box"><span class="new-price">মূল্য: ৩৫ টাকা (প্রতি পিস)</span></div>
-                    <p>উন্নত ফলনশীল ও পুষ্টিকর পাতার জাতের হাইব্রিড চারা[span_9](start_span)[span_9](end_span)।</p>
+                    <p>উন্নত ফলনশীল ও পুষ্টিকর পাতার জাতের হাইব্রিড চারা।</p>
                 </div>
             </div>
         </div>
 
-        <!-- বিশেষ দ্রষ্টব্য বক্স -->
         <div class="note-box">
             <strong>বিঃদ্রঃ</strong>
             চারা কেনার আগে প্রাপ্যতা ও মূল্য ফোনে নিশ্চিত করে নিন। জাত, মৌসুম ও মজুদ অনুযায়ী চারা পাওয়া যেতে পারে। অর্ডার ও ডেলিভারি সম্পর্কে জানতে আমাদের সঙ্গে যোগাযোগ করুন।
         </div>
 
-        <!-- ঠিকানা বক্স -->
         <div class="location-box">
             <strong>📍 আমাদের নার্সারির ঠিকানা</strong>
             ৬ নং ওয়ার্ড, বলারকান্দা, গৌরীপুর, ময়মনসিংহ। আমাদের নিজস্ব নার্সারিতে একবার ঘুরে আসার জন্য আপনাকে আন্তরিক স্বাগতম!
         </div>
 
-        <!-- অ্যাকশন বাটন গ্রুপ -->
         <div class="btn-group">
             <a href="tel:01914914127" class="contact-btn call-btn">📞 ফোন করুন: 01914914127</a>
             <a href="https://wa.me/8801914914127" target="_blank" class="contact-btn whatsapp-btn">💬 WhatsApp-এ অর্ডার করুন</a>
