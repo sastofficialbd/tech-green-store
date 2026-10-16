@@ -36,31 +36,7 @@
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             margin-bottom: 15px;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-        }
-        @media(min-width: 500px) {
-            .product-card {
-                flex-direction: row;
-            }
-            .product-img {
-                width: 150px;
-                height: 150px;
-                object-fit: cover;
-            }
-        }
-        .product-img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-        }
-        .product-info {
             padding: 15px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            flex-grow: 1;
         }
         .product-info h3 {
             margin: 0 0 8px 0;
@@ -130,167 +106,122 @@
         
         <!-- পণ্যের তালিকা -->
         <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=300&q=80" alt="বারি বেগুন ১২" class="product-img">
             <div class="product-info">
-                <div>
-                    <h3>১. বারি বেগুন ১২ এর চারা</h3>
-                    <div class="price-box">মূল্য: ৪০ টাকা (প্রতি পিস)</div>
-                    <p>উচ্চ ফলনশীল এবং রোগ প্রতিরোধ ক্ষমতাসম্পন্ন বারি বেগুন ১২ জাতের সুস্থ চারা।</p>
-                </div>
+                <h3>১. বারি বেগুন ১২ এর চারা</h3>
+                <div class="price-box">মূল্য: ৪০ টাকা (প্রতি পিস)</div>
+                <p>উচ্চ ফলনশীল এবং রোগ প্রতিরোধ ক্ষমতাসম্পন্ন বারি বেগুন ১২ জাতের সুস্থ চারা।</p>
             </div>
         </div>
 
         <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1563514227147-6d2ff665a6a0?auto=format&fit=crop&w=300&q=80" alt="বারি বেগুন ৮" class="product-img">
             <div class="product-info">
-                <div>
-                    <h3>২. বারি বেগুন ৮</h3>
-                    <div class="price-box">মূল্য: ৪০ টাকা (প্রতি পিস)</div>
-                    <p>অধিক ফলনশীল ও সুস্বাদু জনপ্রিয় বারি বেগুন ৮ জাতের চারা।</p>
-                </div>
+                <h3>২. বারি বেগুন ৮</h3>
+                <div class="price-box">মূল্য: ৪০ টাকা (প্রতি পিস)</div>
+                <p>অধিক ফলনশীল ও সুস্বাদু জনপ্রিয় বারি বেগুন ৮ জাতের চারা।</p>
             </div>
         </div>
 
         <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1570586902913-1c39ef2e12e8?auto=format&fit=crop&w=300&q=80" alt="বারি লাউ ৬" class="product-img">
             <div class="product-info">
-                <div>
-                    <h3>৩. বারি লাউ ৬</h3>
-                    <div class="price-box">মূল্য: ৪৫ টাকা (প্রতি পিস)</div>
-                    <p>উন্নত জাতের উচ্চ ফলনশীল বারি লাউ ৬ এর সতেজ চারা।</p>
-                </div>
+                <h3>৩. বারি লাউ ৬</h3>
+                <div class="price-box">মূল্য: ৪৫ টাকা (প্রতি পিস)</div>
+                <p>উন্নত জাতের উচ্চ ফলনশীল বারি লাউ ৬ এর সতেজ চারা।</p>
             </div>
         </div>
 
         <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1587049352847-4a222e784d38?auto=format&fit=crop&w=300&q=80" alt="বারি লাউ ৪" class="product-img">
             <div class="product-info">
-                <div>
-                    <h3>৪. বারি লাউ ৪</h3>
-                    <div class="price-box">মূল্য: ৪৫ টাকা (প্রতি পিস)</div>
-                    <p>দ্রুত বর্ধনশীল এবং প্রচুর লাউ ধরার উপযোগী বারি লাউ ৪ এর চারা।</p>
-                </div>
+                <h3>৪. বারি লাউ ৪</h3>
+                <div class="price-box">মূল্য: ৪৫ টাকা (প্রতি পিস)</div>
+                <p>দ্রুত বর্ধনশীল এবং প্রচুর লাউ ধরার উপযোগী বারি লাউ ৪ এর চারা।</p>
             </div>
         </div>
 
         <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=300&q=80" alt="বারি মিষ্টি লাউ ১" class="product-img">
             <div class="product-info">
-                <div>
-                    <h3>৫. বারি মিষ্টি লাউ ১</h3>
-                    <div class="price-box">মূল্য: ৪০ টাকা (প্রতি পিস)</div>
-                    <p>মিষ্টি ও সুস্বাদু ফলন নিশ্চিত করতে বারি মিষ্টি লাউ ১ জাতের চারা।</p>
-                </div>
+                <h3>৫. বারি মিষ্টি লাউ ১</h3>
+                <div class="price-box">মূল্য: ৪০ টাকা (প্রতি পিস)</div>
+                <p>মিষ্টি ও সুস্বাদু ফলন নিশ্চিত করতে বারি মিষ্টি লাউ ১ জাতের চারা।</p>
             </div>
         </div>
 
         <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1570586648180-81f7d23f338d?auto=format&fit=crop&w=300&q=80" alt="বারি মিষ্টি লাউ ৮" class="product-img">
             <div class="product-info">
-                <div>
-                    <h3>৬. বারি মিষ্টি লাউ ৮</h3>
-                    <div class="price-box">মূল্য: ৪০ টাকা (প্রতি পিস)</div>
-                    <p>উন্নত ও খাঁটি জাতের বারি মিষ্টি লাউ ৮ এর পুষ্ট চারা।</p>
-                </div>
+                <h3>৬. বারি মিষ্টি লাউ ৮</h3>
+                <div class="price-box">মূল্য: ৪০ টাকা (প্রতি পিস)</div>
+                <p>উন্নত ও খাঁটি জাতের বারি মিষ্টি লাউ ৮ এর পুষ্ট চারা।</p>
             </div>
         </div>
 
         <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=300&q=80" alt="বারি টমেটো ২১" class="product-img">
             <div class="product-info">
-                <div>
-                    <h3>৭. বারি টমেটো ২১</h3>
-                    <div class="price-box">মূল্য: ৫০ টাকা (প্রতি পিস)</div>
-                    <p>উচ্চ ফলনশীল হাইব্রিড জাতের বারি টমেটো ২১ চারা। প্রচুর ও সুস্বাদু ফল দেয়।</p>
-                </div>
+                <h3>৭. বারি টমেটো ২১</h3>
+                <div class="price-box">মূল্য: ৫০ টাকা (প্রতি পিস)</div>
+                <p>উচ্চ ফলনশীল হাইব্রিড জাতের বারি টমেটো ২১ চারা। প্রচুর ও সুস্বাদু ফল দেয়।</p>
             </div>
         </div>
 
         <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=300&q=80" alt="বারি টমেটো ৮" class="product-img">
             <div class="product-info">
-                <div>
-                    <h3>৮. বারি টমেটো ৮</h3>
-                    <div class="price-box">মূল্য: ৫০ টাকা (প্রতি পিস)</div>
-                    <p>কৃষকদের আস্থার প্রতীক বারি টমেটো ৮ জাতের উন্নত চারা।</p>
-                </div>
+                <h3>৮. বারি টমেটো ৮</h3>
+                <div class="price-box">মূল্য: ৫০ টাকা (প্রতি পিস)</div>
+                <p>কৃষকদের আস্থার প্রতীক বারি টমেটো ৮ জাতের উন্নত চারা।</p>
             </div>
         </div>
 
         <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1547514701-42782101795e?auto=format&fit=crop&w=300&q=80" alt="বারি খাটো জাতের শিম" class="product-img">
             <div class="product-info">
-                <div>
-                    <h3>৯. বারি খাটো জাতের শিম</h3>
-                    <div class="price-box">মূল্য: ৩৫ টাকা (প্রতি পিস)</div>
-                    <p>কম জায়গায় অধিক ফলন পাওয়ার জন্য বারি খাটো জাতের শিম চারা।</p>
-                </div>
+                <h3>৯. বারি খাটো জাতের শিম</h3>
+                <div class="price-box">মূল্য: ৩৫ টাকা (প্রতি পিস)</div>
+                <p>কম জায়গায় অধিক ফলন পাওয়ার জন্য বারি খাটো জাতের শিম চারা।</p>
             </div>
         </div>
 
         <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1547514701-42782101795e?auto=format&fit=crop&w=300&q=80" alt="বারি ঝাড় শিম" class="product-img">
             <div class="product-info">
-                <div>
-                    <h3>১০. বারি ঝাড় শিম</h3>
-                    <div class="price-box">মূল্য: ৩৫ টাকা (প্রতি পিস)</div>
-                    <p>সহজে চাষ উপযোগী উচ্চ ফলনশীল বারি ঝাড় শিম চারা।</p>
-                </div>
+                <h3>১০. বারি ঝাড় শিম</h3>
+                <div class="price-box">মূল্য: ৩৫ টাকা (প্রতি পিস)</div>
+                <p>সহজে চাষ উপযোগী উচ্চ ফলনশীল বারি ঝাড় শিম চারা।</p>
             </div>
         </div>
 
         <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=300&q=80" alt="বারি ব্রোকলি" class="product-img">
             <div class="product-info">
-                <div>
-                    <h3>১১. বারি ব্রোকলি</h3>
-                    <div class="price-box">মূল্য: ৪৫ টাকা (প্রতি পিস)</div>
-                    <p>পুষ্টিগুণে ভরপুর এবং তাজা ফলনশীল বারি ব্রোকলি চারা।</p>
-                </div>
+                <h3>১১. বারি ব্রোকলি</h3>
+                <div class="price-box">মূল্য: ৪৫ টাকা (প্রতি পিস)</div>
+                <p>পুষ্টিগুণে ভরপুর এবং তাজা ফলনশীল বারি ব্রোকলি চারা।</p>
             </div>
         </div>
 
         <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1568584711270-dcae3f3646fc?auto=format&fit=crop&w=300&q=80" alt="বারি ফুলকপি" class="product-img">
             <div class="product-info">
-                <div>
-                    <h3>১২. বারি ফুলকপি</h3>
-                    <div class="price-box">মূল্য: ৪০ টাকা (প্রতি পিস)</div>
-                    <p>বড় সাইজ ও সুন্দর আকারের ফুলকপি চাষের জন্য বারি ফুলকপি চারা।</p>
-                </div>
+                <h3>১২. বারি ফুলকপি</h3>
+                <div class="price-box">মূল্য: ৪০ টাকা (প্রতি পিস)</div>
+                <p>বড় সাইজ ও সুন্দর আকারের ফুলকপি চাষের জন্য বারি ফুলকপি চারা।</p>
             </div>
         </div>
 
         <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1588883622613-72c09b6c295e?auto=format&fit=crop&w=300&q=80" alt="বারি মরিচের চারা" class="product-img">
             <div class="product-info">
-                <div>
-                    <h3>১৩. বারি মরিচের চারা</h3>
-                    <div class="price-box">মূল্য: ৩০ টাকা (প্রতি পিস)</div>
-                    <p>অধিক ঝাল ও রোগ প্রতিরোধী বারি মরিচ গাছের সুস্থ চারা।</p>
-                </div>
+                <h3>১৩. বারি মরিচের চারা</h3>
+                <div class="price-box">মূল্য: ৩০ টাকা (প্রতি পিস)</div>
+                <p>অধিক ঝাল ও রোগ প্রতিরোধী বারি মরিচ গাছের সুস্থ চারা।</p>
             </div>
         </div>
 
         <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=300&q=80" alt="বারি ঢেঁড়স চারা" class="product-img">
             <div class="product-info">
-                <div>
-                    <h3>১৪. বারি ঢেঁড়স চারা</h3>
-                    <div class="price-box">মূল্য: ২৫ টাকা (প্রতি পিস)</div>
-                    <p>দীর্ঘ সময় ফলন দেয় এমন উন্নত জাতের বারি ঢেঁড়স চারা।</p>
-                </div>
+                <h3>১৪. বারি ঢেঁড়স চারা</h3>
+                <div class="price-box">মূল্য: ২৫ টাকা (প্রতি পিস)</div>
+                <p>দীর্ঘ সময় ফলন দেয় এমন উন্নত জাতের বারি ঢেঁড়স চারা।</p>
             </div>
         </div>
 
         <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?auto=format&fit=crop&w=300&q=80" alt="বারি গজ করলা" class="product-img">
             <div class="product-info">
-                <div>
-                    <h3>১৫. বারি গজ করল্লা</h3>
-                    <div class="price-box">মূল্য: ৪০ টাকা (প্রতি পিস)</div>
-                    <p>উচ্চ ফলনশীল ও গুণগত মানে সেরা বারি গজ করলা চাষের চারা।</p>
-                </div>
+                <h3>১৫. বারি গজ করলা</h3>
+                <div class="price-box">মূল্য: ৪০ টাকা (প্রতি পিস)</div>
+                <p>উচ্চ ফলনশীল ও গুণগত মানে সেরা বারি গজ করলা চাষের চারা।</p>
             </div>
         </div>
 
